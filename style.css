@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /* Importa fuentes de Google Fonts */
+
+:root {
+ --color-primario: #0C0950;
+ --color-secundario: #F6F0F0;
+ --color-terciario: #F2E2B1;
+ --fuente-monserrat: "Montserrat", sans-serif;
+ --fuente-krona: "Krona One", sans-serif;
+
+
+}
+/* Resetea márgenes y rellenos de todos los elementos */
+*{
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el relleno por defecto */
+}
+
+body { 
+    box-sizing: border-box; /* Define el modelo de caja */
+    background-color: var(--color-primario); /* Define el color de fondo usando root */
+    color: var(--color-secundario); /* Define el color del texto usando root */
+    
+
+}
+.header {  /* Define el encabezado */
+    padding: 2% 0% 0% 15%; /* Define el relleno */ 
+
+}
+.header_menu { /* Define el menú */ 
+    display: flex; 
+    gap: 80px;
+    
+}
+.header_menu_link { /* Define el enlace del menú */ 
+    font-family: var(--fuente-monserrat); /* Define la fuente del texto */    
+    font-size: 1.5rem; /* Define el tamaño de fuente del texto */
+    font-weight: 600; /* Establece el grosor de la fuente */
+    color: var(--color-terciario); /* Define el color del texto */
+    text-decoration: none; /* Elimina el subrayado del texto */
+       
+}
+
+.header_menu_link:hover { /* Define el color del texto al pasar el mouse por encima */
+    color: #007bff;
+}
+
+
+.presentacion { /* Define el contenedor */
+    display: flex; /* Define el modelo de caja */
+    align-items: center; /* Alinea los elementos horizontalmente */
+    padding: 2% 15%; /* Alinea los elementos verticalmente */
+    justify-content: space-between; /* Alinea los elementos horizontalmente */
+    gap: 82px; /* Agrega un espacio entre los elementos hijos, la imagen y los textos */
+}
+
+.presentacion-contenido {
+    width: 50%; /* Define el ancho del contenedor */
+    display: flex; /* Establece un contenedor flexible para los elementos hijos */
+    flex-direction: column; /* Organiza los elementos hijos en una columna */
+    gap: 40px; /* Agrega un espacio entre los elementos hijos */
+}
+.presentacion-titulo {
+    font-size: 2.25rem;  /* Establece el tamaño de fuente del título */
+    font-family: var(--fuente-krona); /* Aplica la fuente importada al título */
+}
+
+.titulo-destaque {
+    color: var(--color-terciario); /* Define el color del texto */
+}
+
+.presentacion-texto {
+    font-size: 1.5rem; /* Establece el tamaño de fuente del texto */
+    font-family: var(--fuente-monserrat); /* Aplica la fuente importada al texto */
+}
+
+.presentacion-enlaces {
+    display: flex; /* Establece un contenedor flexible para los enlaces */
+    justify-content: space-between; /* Distribuye el espacio entre los enlaces */
+    flex-direction: column; /* Organiza los enlaces en una columna */
+    align-items: center; /* Alinea los enlaces horizontalmente al centro */
+    gap: 32px; /* Agrega un espacio entre los enlaces */
+    
+}
+
+.presentacion-enlaces-subtitulo {
+    font-size: 1.5rem;
+    font-family: var(--fuente-krona);
+    font-weight: 400;/* Establece el grosor de la fuente */
+}
+
+.boton-link {
+    width: 50%; /* Establece un ancho fijo para el botón */
+    text-align: center; /* Centra el texto dentro del botón */
+    padding: 21.5px 0; /* Agrega relleno vertical y horizontal al botón */
+    border-radius: 8px; /* Redondea las esquinas del botón */
+    font-family: var(--fuente-monserrat); /* Aplica la fuente importada al botón */
+    font-size: 1.5rem; /* Establece el tamaño de fuente del botón */
+    font-weight: 600; /* Establece el grosor de la fuente del botón */
+    text-decoration: none; /* Elimina el subrayado del texto del botón */
+    color: var(--color-secundario); /* Establece el color del texto del botón */
+    border: 2px solid var(--color-terciario); /* Establece un borde de 2px de color azul claro */
+    display: flex; /* Establece un contenedor flexible para el botón */
+    justify-content: center; /* Centra el texto dentro del botón */
+    gap: 16px; /* Agrega un espacio entre el texto y el ícono */
+
+    
+}
+
+.boton-link:hover { /* Establece el color de fondo del botón al pasar el mouse por encima */
+    background-color: #A5B68D; 
+    padding: 3%; /* agrega un efecto */
+
+}
+
+.presentacion-imagen {
+    width: 50%; 
+
+}
+
+.footer{
+    background-color: var(--color-terciario); /* Define el color de fondo */
+    padding: 1.5rem; /* Define el relleno */
+    color: var(--color-primario); /* Define el color del texto */ 
+    text-align: center; /* Alinea el texto horizontalmente al centro */
+    font-family: var(--fuente-monserrat); /* Define la fuente del texto */
+    font-size: 1.5rem; /* Define el tamaño de fuente del texto */
+    font-weight: 400; /* Establece el grosor de la fuente */
+    flex-direction: column; /* Organiza los elementos hijos en una columna */
+
+}
+
+.presentacion-contenido-texto {
+    text-decoration: none;
+    color: var(--color-secundario);
+    font-family: var(--fuente-monserrat);
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 0.1% 0.1%; /* Alinea los elementos verticalmente */
+    justify-content: space-evenly;
+
+}
+
+.presentacion-texto-contacto {
+    font-family: var(--fuente-monserrat);
+    font-size: 1.25rem;
+    font-weight: 400;
+    
+}
+
+@media (max-width: 1200px) {
+
+    .header {
+        padding: 10%;
+    }
+
+    .header_menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion-contenido {
+        width: auto;
+    }
+    
+
+}
+
+
+
