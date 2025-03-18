@@ -49,4 +49,4 @@ Este portafolio incluye varias secciones con información sobre mis proyectos, e
 
 1️⃣ Clona este repositorio en tu máquina local:  
    ```bash
-   git clone https://github.com/Gonza-1709/tu_portafolio.git
+   git clone https://github.com/Gonza-1709/portafolio.git
